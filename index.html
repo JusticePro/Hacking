@@ -1,0 +1,31 @@
+<head>
+  <title>The Quiz of Your Life!</title>
+  <script src="code.js"></script>
+</head>
+
+<body style="text-align: center; border: solid black; color: darkgray">
+  <h1>The Quiz of Your Life!</h1>
+  <h2>Noah's 15th Birthday. (Warning! I make fun of you a bit.)</h2>
+
+  <div id="menu_main" style="">
+    <span>Click start to begin.</span>
+    <button onclick="start()">Start</button>
+  </div>
+
+  <div id="menu_story">
+    <h1 id="menu_story_text_big" style="color: red"></h1>
+    <span id="menu_story_text"></span>
+    <button id="menu_story_finish" style="display: none" onclick="finishCutscene()">Finish</button>
+  </div>
+
+  <div id="question" style="display: none">
+    <span id="question_questionTitle"></span><br>
+    <br>
+    <button onclick="chooseOption(0)" id="question_option0"></button>
+    <button onclick="chooseOption(1)" id="question_option1"></button>
+    <button onclick="chooseOption(2)" id="question_option2"></button>
+    <button onclick="chooseOption(3)" id="question_option3"></button>
+    <button onclick="chooseOption(4)" id="question_option4"></button>
+  </div>
+
+</body>
